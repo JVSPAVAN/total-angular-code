@@ -1,0 +1,48 @@
+  <div class="container">
+
+<h3>Details of Customer</h3>
+ <table class= "table" *ngIf = "user">
+    <thead>
+        <tr class="danger">
+               <th>FirstName</th>
+               <th>MiddleName</th>
+               <th>LastName</th>
+               <th>Dob</th>
+               <th>Gender</th>
+               <th>Permanent Address</th>
+               <th>Present Address</th>
+               <th>Occupation</th>
+               <th>Salary</th>
+               <th>Marital Status</th>
+               <th>Children</th>
+               <th>Email</th>
+               <th>Phone No.</th>
+               <th>Pan No.</th>
+         </tr>
+        </thead>
+
+        <tbody>
+         <tr *ngFor= "let user1 of user" class="active"> 
+         
+            <td>{{user1.userfirst}}</td>     
+            <td>{{user1.usermiddle}}</td> 
+            <td>{{user1.userlast}}</td>
+            <td>{{user1.userdob}}</td>
+            <td>{{user1.gender}}</td>
+            <td>{{user1.userpermaddr}}</td>
+            <td>{{user1.userpresentaddr}}</td>
+            <td>{{user1.useroccupation}}</td>
+            <td>{{user1.usersalary}}</td>
+            <td>{{user1.marital}}</td>
+            <td>{{user1.userchildren}}</td>
+            <td>{{user1.useremail}}</td>
+            <td>{{user1.userphone}}</td>
+            <td>{{user1.userpan}}</td>
+              
+         </tr>
+    
+    </tbody>
+    
+    </table>
+
+</div>

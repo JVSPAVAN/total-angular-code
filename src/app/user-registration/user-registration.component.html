@@ -1,0 +1,98 @@
+<div class="registration">
+    <div id="userReg">
+        <form [formGroup] = "formgroup" (submit)="submit()" >
+        <table>
+            <tr>
+                <td>First Name</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="userfirst" required></td>
+                </div>
+            </tr>
+             <tr>
+                <td>Middle Name</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="usermiddle" ></td>
+                </div>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="userlast" required></td>
+                </div>
+            </tr>
+            <tr>
+                <td>DOB</td>
+                <div class="inputBox">
+                <td><input type="date" formControlName="userdob" required></td>
+                </div>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" formControlName="gender" value="male" >
+                    <label>  Male  </label>
+                    <input type="radio" formControlName="gender" value="female">
+                    <label>  Female</label>
+                </td>
+            </tr>
+              <tr>
+                <td>Permanent Address</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="userpermaddr" required></td>
+                </div>
+            </tr>
+            <tr>
+                <td>Present Address</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="userpresentaddr" required></td>
+                </div>
+            </tr>
+            <tr>
+                <td>Occupation</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="useroccupation" required></td>
+                </div>
+            </tr>
+            <tr>
+                <td>Annual Salary</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="usersalary" required></td>
+                </div>
+            </tr>
+            <tr>
+                <td>Marriage Status</td>
+                <td>
+                    <input type="radio" formControlName="marital" value="married"><label>Married</label>
+                    <input type="radio" formControlName="marital" value="single"><label>Single</label>
+                    <input type="radio" formControlName="marital" value="divorcee"><label>Divorcee</label>
+                </td>
+            </tr>
+             <tr>
+                <td>Number of Children</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="userchildren" required></td>
+                </div>
+            </tr>
+             <tr>
+                <td>email</td>
+                <div class="inputBox">
+                <td><input type="email" formControlName="useremail" required></td>
+                </div>
+            </tr>
+             <tr>
+                <td>Phone Number</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="userphone" required></td>
+                </div>
+            </tr>
+              <tr>
+                <td>PAN card</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="userpan" required></td>
+                </div>
+            </tr>
+            </table>
+             <input type="submit" name="userregister" value="Customer Register">
+            </form>
+            </div>
+            </div>
+        

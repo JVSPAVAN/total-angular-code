@@ -1,0 +1,47 @@
+
+#userReg
+{
+   
+    transform: translate(-50%,-50%);
+    width: 490px;
+    padding: 40px;
+    padding-left: 60px;
+    background: rgba(0, 0, 0, 0.8);  
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 740px;
+    margin-top: 390px;
+    margin-left: 730px;
+    font-family: sans-serif;
+    color: #fff;
+}
+.registration .inputBox input{
+    width: 100%;
+    padding: 5px 0;
+    padding-left: 3px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.registration input[type="submit"]
+{
+    margin-top: 30px;
+    margin-left: 110px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}

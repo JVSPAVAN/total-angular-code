@@ -1,0 +1,87 @@
+
+<body>
+<div class="registration">
+    <div id="agentreg">
+        <form  [formGroup] = "formgroup" (submit)="submitAgent()" >
+        <table>
+            <tr>
+                <td>First Name</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="agentfirst" required></td>
+                </div>
+            </tr>
+             <tr>
+                <td>Middle Name</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="agentmiddle"></td>
+                </div>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="agentlast" required></td>
+                </div>
+            </tr>
+            <tr>
+                <td>DOB</td>
+                <div class="inputBox">
+                <td>
+                <input type="date" formControlName="agentdob" required > 
+                </td>
+            </div>
+            </tr>
+              <tr>
+                <td>Address</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="agentaddr" required></td>
+                </div>
+            </tr>
+             <tr>
+                <td>Years of Experience</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="agentexp" required></td>
+                </div>
+            </tr>
+             <tr>
+                <td>Email</td>
+                <div class="inputBox">
+                <td><input type="email" formControlName="agentemail" required></td>
+                </div>
+            </tr>
+             <tr>
+                <td>Phone Number</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="agentphone" required></td>
+                </div>
+            </tr>
+              <tr>
+                <td>PAN card</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="agentpan" required></td>
+                </div>
+            </tr>
+              <tr>
+                <td>Zone</td>
+                
+                <td><select formControlName="agentzone" required>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="bombay">Bombay</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="trivandrum">Trivandrum</option>
+                </select></td>
+              
+            </tr>
+              <tr>
+                <td>Referred by</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="agentref"></td>
+                </div>
+            </tr>
+        </table>
+        <input type="submit" name="agentregister" value="Agent Register">
+        </form>
+       
+    </div>
+</div>
+</body>

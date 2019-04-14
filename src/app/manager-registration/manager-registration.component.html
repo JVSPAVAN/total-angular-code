@@ -1,0 +1,55 @@
+<body>
+<div class="registration">
+    <div id="mangreg">
+        <form  [formGroup] = "formgroup" (submit)="submitManager()" >
+        <table>
+            <tr>
+                <td>Full Name</td>
+                <div class="inputBox">
+                <td><input type="text" formControlName="mangfirst" required></td>
+                </div>
+            </tr>
+            <tr>
+                <td>DOB</td>
+                  <div class="inputBox">
+                <td><input type="date" formControlName="mangdob" required></td></div>
+            </tr>
+            <tr>
+            <td>Select State</td>
+                <td><select formControlName="mangstate" data-role ="select" required>
+                    <option value="AP">Andhra Pradesh</option>
+                    <option value="Maharastra">Maharastra</option>
+                    <option value="karnataka">Karanataka</option>
+                    <option value="TN">Tamilnadu</option>
+                    <option value="Kerala">Kerala</option>
+                </select></td></tr>
+                
+                 <tr>
+                <td>Zone</td>
+                <td><select formControlName="mangzone" data-role ="select" required>
+                    <option value="hyd">Hyderabad</option>
+                    <option value="bomb">Bombay</option>
+                    <option value="ban">Bangalore</option>
+                    <option value="chn">Chennai</option>
+                    <option value="tvm">Trivandrum</option>
+                </select></td>
+            </tr>
+             <tr>
+                <td>Designation</td>
+                <td><select formControlName="mangdesg" required>
+                    <option value="AM">Area Manager</option>
+                    <option value="CM">City Manager</option>
+                    <option value="ZM">Zonal Manager</option>
+                </select></td>
+            </tr>
+             <tr>
+                <td>Email</td>
+                <div class="inputBox">
+                <td><input type="email" formControlName="mangemail" required></td>
+           </div>
+        </table>
+        <input type="submit" name="mangregister" value="Manager Register">
+        </form>
+    </div>
+</div>
+</body>
